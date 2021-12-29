@@ -7,7 +7,7 @@
 .labemail{
     padding-right: 129px;
 }
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 876px) {
 h1, .infos {
     text-align: center;
 }
@@ -41,6 +41,45 @@ li {
 .tituloform{
     margin-top: 25vh;
 }
+}
+
+@media screen and (max-width: 875px){
+    .split {
+        text-align: center;
+    }
+    li {
+        list-style: none;
+    }
+    ul {
+        padding: 0;
+    }
+    .titulo {
+        position: absolute;
+        margin-top: 35vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 50%;
+    
+    }
+    .seta {
+        margin-top: 95vh;
+        padding-left: 50%;
+    }
+    .infos {
+        position: absolute;
+        top: 80%;
+        margin-top: 45%;
+        height: 65vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+    }
+    form {
+        height: 50%;
+    }
+    
 }
 
 @media screen and (max-width: 420px) {
