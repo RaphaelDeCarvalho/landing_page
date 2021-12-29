@@ -7,7 +7,7 @@
 .labemail{
     padding-right: 129px;
 }
-@media screen and (min-width: 876px) {
+@media screen and (min-width: 940px) {
 h1, .infos {
     text-align: center;
 }
@@ -43,7 +43,7 @@ li {
 }
 }
 
-@media screen and (max-width: 875px){
+@media screen and (max-width: 939px){
     .split {
         text-align: center;
     }
