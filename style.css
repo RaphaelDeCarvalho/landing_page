@@ -10,6 +10,7 @@
 @media screen and (min-width: 876px) {
 h1, .infos {
     text-align: center;
+    margin-top: 43vh;
 }
 .split {
     height: 100%;
@@ -22,7 +23,7 @@ h1, .infos {
 
 .titulo {
     left: 0;
-    margin-top: 35vh;
+    
 }
 
 .infos {
