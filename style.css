@@ -12,6 +12,9 @@ h1, .infosform {
     text-align: center;
     margin-top: 43vh;
 }
+.infosform {
+    margin-top: 39vh;
+}
 .split {
     height: 100%;
   width: 50%;
@@ -95,7 +98,7 @@ li {
     }
     .titulo {
         position: absolute;
-        margin-top: 35vh;
+        margin-top: 40vh;
         top: 0;
         right: 0;
         left: 0;
@@ -103,7 +106,7 @@ li {
     
     }
     .seta {
-        margin-top: 95vh;
+        margin-top: 90vh;
         padding-left: 50%;
     }
     .infos {
