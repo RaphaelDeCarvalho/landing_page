@@ -83,6 +83,7 @@ li {
     .seta {
         margin-top: 95vh;
         padding-left: 50%;
+        position: absolute;
     }
     .infos {
         position: absolute;
