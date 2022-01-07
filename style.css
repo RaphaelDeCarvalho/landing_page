@@ -1,7 +1,7 @@
 section.split.titulopage{
     background-image: url('img/soap0.jpg');
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -63,7 +63,7 @@ li {
         text-align: center;
     }
     section.split.titulopage {
-        background-size: 100%;
+        background-size: cover;
     }
     li {
         list-style: none;
@@ -106,7 +106,7 @@ li {
         text-align: center;
     }
     section.split.titulopage {
-        background-size: 145%;
+        background-size: 100vh;
         background-position: top;
     }
     li {
@@ -155,8 +155,8 @@ li {
         }
     }
     @media screen and (max-width: 375px){
-        .titulo{
-            margin-top: 180px;
+        section.split.titulopage {
+            background-image: url('img/soap0.jpg');
         }
         li {
             list-style: none;
@@ -167,11 +167,9 @@ li {
     }
     @media screen and (max-width: 320px){
         section.split.titulopage {
-            background-image: url('img/soap1.jpg');
-            background-size: 125%;
+            background-size: 100vh;
         }
         .titulo {
-            margin-top: 180px;
             top: 0;
             bottom: 50%;
         }
