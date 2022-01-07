@@ -9,6 +9,12 @@ section.split.titulopage{
     right: 0;
     bottom: 0;
 }
+section.split.infospage {
+    background-image: url(img/consumer0.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .labnome{
     padding-right: 135px;
 }
@@ -19,7 +25,7 @@ section.split.titulopage{
     padding-right: 129px;
 }
 @media screen and (min-width: 876px) {
-h1, .infosform {
+.titulo, .infosform {
     text-align: center;
     margin-top: 43vh;
 }
@@ -40,8 +46,9 @@ h1, .infosform {
     
 }
 
-.infos {
+.infospage {
     right: 0;
+
    
 }
 label {
@@ -55,6 +62,7 @@ li {
 }
 .tituloform{
     margin-top: 25vh;
+    padding: 0 250px;
 }
 }
 
@@ -85,15 +93,17 @@ li {
         padding-left: 50%;
         position: absolute;
     }
-    .infos {
+    .infospage {
         position: absolute;
-        top: 95%;
-        margin-top: 45%;
-        height: 65vh;
+        top: 100%;
+        height: 90vh;
         right: 0;
         left: 0;
         bottom: 0;
         
+    }
+    .infosform{
+        margin-top: 30vh;
     }
     form {
         height: 50%;
@@ -128,11 +138,8 @@ li {
         margin-top: 90vh;
         padding-left: 50%;
     }
-    .infos {
+    .infospage {
         position: absolute;
-        top: 90%;
-        margin-top: 100%;
-        height: 55vh;
         right: 0;
         left: 0;
         bottom: 0;
@@ -143,16 +150,11 @@ li {
     }
 }
     @media screen and (max-width: 414px){
-        .infos {
-            margin-top: 55%;
-            height: 70vh;
+        .infospage {
             bottom: 0;
         }
     }
     @media screen and (max-width: 380px){
-        .infos {
-            margin-top: 55%;
-        }
     }
     @media screen and (max-width: 375px){
         section.split.titulopage {
@@ -160,9 +162,6 @@ li {
         }
         li {
             list-style: none;
-        }
-        .infos {
-            margin-top: 55%;
         }
     }
     @media screen and (max-width: 320px){
