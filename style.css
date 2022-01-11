@@ -27,6 +27,15 @@ ul.formitems{
 .labemail{
     padding-right: 129px;
 }
+.infosform {
+    height: 17em;
+    margin-top: 15em;
+    padding-top: 0.1em;
+    background-color: #8080807a;
+    margin-left: 15em;
+    margin-right: 15em;
+    border-radius: 45px;
+}
 @media screen and (min-width: 876px) {
 .titulo, .infosform {
     text-align: center;
