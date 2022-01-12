@@ -15,6 +15,9 @@ section.split.infospage {
     background-size: cover;
     background-repeat: no-repeat;
 }
+h1.titulo{
+    font-family: 'Cinzel', serif;
+}
 ul.formitems{
     padding: 0;
 }
@@ -27,13 +30,18 @@ ul.formitems{
 .labemail{
     padding-right: 129px;
 }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 1401px) {
 .titulo, .infosform {
     text-align: center;
     margin-top: 43vh;
 }
 .infosform {
-    margin-top: 39vh;
+    margin-top: 35vh;
+    height: 18em;
+    background-color: #8080807a;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-radius: 45px;
 }
 .split {
     height: 100%;
@@ -65,10 +73,11 @@ li {
 }
 .tituloform{
     margin-top: 25vh;
+    padding-top: 3vh;
 }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1400px){
     .split {
         text-align: center;
     }
