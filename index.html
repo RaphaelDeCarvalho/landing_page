@@ -21,26 +21,17 @@
     <!-- Formulário -->
     <section class="split infospage">
         <div class="infosform">
-        <h2 id="tituloform" class="tituloform">Cadastre-se para ter maiores<br>informações do produto</h2>
+        <h2 id="tituloform" class="tituloform">Inscreva-se para informações e <br> novidades do produto</h2>
         <form action="" method="get" class="formulamain" id="formula">
         <ul class="formitems">
             <li>
-            <label for="name" id="labnome" class="labnome"></label>
+            <input type="text" class="formitem" placeholder="Nome:" name="formulario" id="nome">
             </li>
             <li>
-            <input type="text" placeholder="Nome:" name="formulario" id="nome">
+            <input type="tel" class="formitem" placeholder="Telefone:" name="formulario" id="phone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>
             </li>
             <li>
-            <label for="phone" id="labtel" class="labtel"></label>
-            </li>
-            <li>
-            <input type="tel" placeholder="Telefone:" name="formulario" id="phone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>
-            </li>
-            <li>
-                <label for="email" id="labemail" class="labemail"></label>
-            </li>
-            <li>
-            <input type="email" placeholder="E-mail:" name="formulario" id="carta">
+            <input type="email" class="formitem" placeholder="E-mail:" name="formulario" id="carta">
             </li>
         </ul>
         <button type="submit">Cadastrar</button>
