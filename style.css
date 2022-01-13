@@ -1,3 +1,6 @@
+body {
+    font-family: 'Cinzel', serif;
+}
 section.split.titulopage{
     background-image: url('img/soap0.jpg');
     background-position: center center;
@@ -16,7 +19,12 @@ section.split.infospage {
     background-repeat: no-repeat;
 }
 h1.titulo{
-    font-family: 'Cinzel', serif;
+    color: #04702a;
+    background: #a3ffe640;
+    font-size: 35px;
+    border: 3px solid;
+    margin-left: 29%;
+    margin-right: 29%;
 }
 ul.formitems{
     padding: 0;
@@ -114,7 +122,7 @@ li {
         
     }
     .infosform {
-        height: 17em;
+        height: 18em;
         margin-top: 25vh;
         padding-top: 0.1em;
         background-color: #8080807a;
@@ -138,7 +146,6 @@ li {
         background-color: #8080807a;
         margin-left: 19vw;
         margin-right: 19vw;
-        border-radius: 45px;
     }
     }   
 @media screen and (max-width: 425px) {
@@ -180,7 +187,6 @@ li {
         background-color: #8080807a;
         margin-left: 7vw;
         margin-right: 7vw;
-        border-radius: 45px;
     }
     form {
         height: 50%;
@@ -212,7 +218,6 @@ li {
             height: 20em;
             padding-top: 0.1em;
             background-color: #8080807a;
-            border-radius: 45px;
         }
         
     }
