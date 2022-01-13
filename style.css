@@ -32,7 +32,7 @@ li {
 ul.formitems{
     padding: 0;
 }
-@media screen and (min-width: 1401px) {
+@media screen and (min-width: 1001px) {
 .titulo, .infosform {
     text-align: center;
     margin-top: 43vh;
@@ -78,7 +78,7 @@ li {
 }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1000px){
     .split {
         text-align: center;
     }
@@ -131,8 +131,15 @@ li {
     }
     
 }
+
+@media screen and (max-width: 872px){
+    .infosform{
+        height: 17em;
+    }
+}
 @media screen and (max-width: 820px){
     .infosform {
+        height: 15em;
         padding-top: 0.1em;
         background-color: #8080807a;
         margin-left: 19vw;
@@ -218,6 +225,11 @@ li {
         
     }
     @media screen and (max-width: 280px){
+        h1.titulo{
+            font-size: 25px;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
         .infosform {
             font-size: 14px;
             height: 19em;
