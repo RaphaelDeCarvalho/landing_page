@@ -32,7 +32,14 @@ li {
 ul.formitems{
     padding: 0;
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1170px) {
+h1.titulo{
+    border: 3px solid;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    padding: 0 1em;
+    position: fixed;
+}
 .titulo, .infosform {
     text-align: center;
     margin-top: 43vh;
@@ -78,7 +85,7 @@ li {
 }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1169px){
     .split {
         text-align: center;
     }
@@ -146,12 +153,23 @@ li {
         margin-right: 19vw;
     }
     }
+@media screen and (max-width: 800px){
+    h1.titulo{
+        font-size: 30px;
+        margin-left: 21vw;
+        margin-right: 21vw;
+    }
+    }
 @media screen and (max-width: 705px){
     .infosform{
         height: 18em;
     }
 }   
 @media screen and (max-width: 500px) {
+    h1.titulo{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
     .split {
         text-align: center;
     }
@@ -199,6 +217,10 @@ li {
     @media screen and (max-width: 414px){
         .infospage {
             bottom: 0;
+        }
+        h1.titulo {
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
     }
     
