@@ -241,6 +241,7 @@ li {
         .titulo {
             top: 0;
             bottom: 50%;
+            margin-bottom: 1vh;
         }
         .infosform {
             padding-top: 0.1em;
