@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .tituloimg{
     position: absolute;
     height: 50vh;
@@ -8,25 +9,74 @@
 }
 .labnome{
     padding-right: 135px;
+=======
+body {
+    font-family: 'Cinzel', serif;
+>>>>>>> master
 }
-.labtel{
-    padding-right: 117px;
+section.split.titulopage{
+    background-image: url('img/soap0.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-.labemail{
-    padding-right: 129px;
+section.split.infospage {
+    background-image: url(img/consumer0.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-@media screen and (min-width: 876px) {
-h1, .infosform {
+h1.titulo{
+    color: #04702a;
+    background: #a3ffe640;
+    font-size: 35px;
+    border: 3px solid;
+    margin-left: 29%;
+    margin-right: 29%;
+}
+li {
+    margin-bottom: 5px;
+}
+ul.formitems{
+    padding: 0;
+}
+i.fas.fa-chevron-down {
+    color: #04702a;
+}
+.infosform{
+    color: #04702a;
+    background-color: #a3ffe640;
+}
+@media screen and (min-width: 1170px) {
+h1.titulo{
+    border: 3px solid;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    padding: 0 1em;
+    position: fixed;
+}
+.titulo, .infosform {
     text-align: center;
     margin-top: 43vh;
 }
+.infosform {
+    margin-top: 35vh;
+    height: 18em;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
 .split {
     height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
 }
 
 .titulo {
@@ -34,8 +84,9 @@ h1, .infosform {
     
 }
 
-.infos {
+.infospage {
     right: 0;
+
    
 }
 label {
@@ -49,12 +100,16 @@ li {
 }
 .tituloform{
     margin-top: 25vh;
+    padding-top: 3vh;
 }
 }
 
-@media screen and (max-width: 875px){
+@media screen and (max-width: 1169px){
     .split {
         text-align: center;
+    }
+    section.split.titulopage {
+        background-size: cover;
     }
     li {
         list-style: none;
@@ -64,7 +119,7 @@ li {
     }
     .titulo {
         position: absolute;
-        margin-top: 35vh;
+        margin-top: 40vh;
         top: 0;
         right: 0;
         left: 0;
@@ -74,17 +129,28 @@ li {
     .seta {
         position: absolute;
         margin-top: 95vh;
-        padding-left: 50%;
-    }
-    .infos {
+        padding-left: 48vw;
         position: absolute;
-        top: 80%;
-        margin-top: 45%;
-        height: 65vh;
+    }
+    .infospage {
+        position: absolute;
+        top: 100%;
+        height: 90vh;
         right: 0;
         left: 0;
         bottom: 0;
         
+    }
+    .infosform {
+        height: 15em;
+        margin-top: 25vh;
+        padding-top: 0.1em;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .tituloform{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     form {
         height: 50%;
@@ -92,9 +158,42 @@ li {
     
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 872px){
+    .infosform{
+        height: 17em;
+    }
+}
+@media screen and (max-width: 820px){
+    .infosform {
+        height: 15em;
+        padding-top: 0.1em;
+        margin-left: 19vw;
+        margin-right: 19vw;
+    }
+    }
+@media screen and (max-width: 800px){
+    h1.titulo{
+        font-size: 30px;
+        margin-left: 21vw;
+        margin-right: 21vw;
+    }
+    }
+@media screen and (max-width: 705px){
+    .infosform{
+        height: 18em;
+    }
+}   
+@media screen and (max-width: 500px) {
+    h1.titulo{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
     .split {
         text-align: center;
+    }
+    section.split.titulopage {
+        background-size: 100vh;
+        background-position: top;
     }
     li {
         list-style: none;
@@ -104,7 +203,7 @@ li {
     }
     .titulo {
         position: absolute;
-        margin-top: 35vh;
+        margin-top: 40vh;
         top: 0;
         right: 0;
         left: 0;
@@ -112,48 +211,65 @@ li {
     
     }
     .seta {
-        margin-top: 95vh;
-        padding-left: 50%;
+        margin-top: 90vh;
     }
-    .infos {
+    .infospage {
         position: absolute;
-        top: 90%;
-        margin-top: 100%;
-        height: 55vh;
         right: 0;
         left: 0;
         bottom: 0;
         
     }
+    .infosform {
+        height: 19em;
+        padding-top: 0.1em;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
     form {
         height: 50%;
     }
-}
+    }
     @media screen and (max-width: 414px){
-        .infos {
-            margin-top: 55%;
-            height: 70vh;
+        .infospage {
             bottom: 0;
         }
-    }
-    @media screen and (max-width: 380px){
-        .infos {
-            margin-top: 55%;
+        h1.titulo {
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
     }
+    
     @media screen and (max-width: 375px){
+        section.split.titulopage {
+            background-image: url('img/soap0.jpg');
+        }
         li {
             list-style: none;
         }
-        .infos {
-            margin-top: 55%;
-        }
     }
     @media screen and (max-width: 320px){
+        section.split.titulopage {
+            background-size: 100vh;
+        }
         .titulo {
-            margin-top: 200px;
             top: 0;
             bottom: 50%;
+            margin-bottom: 1vh;
+        }
+        .infosform {
+            padding-top: 0.1em;
         }
         
+    }
+    @media screen and (max-width: 280px){
+        h1.titulo{
+            font-size: 25px;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
+        .infosform {
+            font-size: 14px;
+            height: 19em;
+        }
     }
