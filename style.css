@@ -125,9 +125,9 @@ li {
     
     }
     .seta {
-        position: absolute;
+        left: 0;
         margin-top: 95vh;
-        padding-left: 48vw;
+        padding-left: 50%;
         position: absolute;
     }
     .infospage {
