@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+body {
+    font-family: 'Cinzel', serif;
+}
 .tituloimg{
     position: absolute;
     height: 50vh;
@@ -9,10 +11,6 @@
 }
 .labnome{
     padding-right: 135px;
-=======
-body {
-    font-family: 'Cinzel', serif;
->>>>>>> master
 }
 section.split.titulopage{
     background-image: url('img/soap0.jpg');
