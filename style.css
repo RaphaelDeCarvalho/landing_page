@@ -1,5 +1,6 @@
-body {
+html {
     font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
 }
 .tituloimg{
     position: absolute;
