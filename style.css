@@ -46,6 +46,7 @@ ul.formitems{
 }
 i.fas.fa-chevron-down {
     color: #04702a;
+    font-size: 20px;
 }
 .infosform{
     color: #04702a;
@@ -127,7 +128,7 @@ li {
     }
     .seta {
         left: 0;
-        margin-top: 95vh;
+        margin-top: 90vh;
         padding-left: 50%;
         position: absolute;
     }
