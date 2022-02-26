@@ -44,6 +44,10 @@ h1.titulo{
     margin-right: auto;
     margin-top: 40vh;
 }
+input {
+    background-color: #fff;
+    border: 1px solid #04702a;
+}
 li {
     margin-bottom: 5px;
 }
