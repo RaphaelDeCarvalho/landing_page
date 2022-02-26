@@ -31,12 +31,18 @@ section.split.infospage {
     background-repeat: no-repeat;
 }
 h1.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    max-width: 360px;
     color: #04702a;
     background: #a3ffe640;
     font-size: 35px;
     border: 3px solid;
-    margin-left: 29%;
-    margin-right: 29%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40vh;
 }
 li {
     margin-bottom: 5px;
@@ -117,15 +123,6 @@ li {
     ul {
         padding: 0;
     }
-    .titulo {
-        position: absolute;
-        margin-top: 40vh;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 50%;
-    
-    }
     .setaDown, .setaUp {
         left: 0;
         margin-top: 90vh;
@@ -174,13 +171,6 @@ li {
         margin-right: 19vw;
     }
     }
-@media screen and (max-width: 800px){
-    h1.titulo{
-        font-size: 30px;
-        margin-left: 21vw;
-        margin-right: 21vw;
-    }
-    }
 @media screen and (max-width: 705px){
     .infosform{
         height: 18em;
@@ -188,8 +178,8 @@ li {
 }   
 @media screen and (max-width: 500px) {
     h1.titulo{
-        margin-left: 15vw;
-        margin-right: 15vw;
+        font-size: 28px;
+        max-width: 270px;
     }
     .split {
         text-align: center;
@@ -210,8 +200,6 @@ li {
         top: 0;
         right: 0;
         left: 0;
-        bottom: 50%;
-    
     }
     .setaDown, .setaUp {
         margin-top: 90vh;
@@ -237,10 +225,6 @@ li {
         .infospage {
             bottom: 0;
         }
-        h1.titulo {
-            margin-left: 5vw;
-            margin-right: 5vw;
-        }
     }
     
     @media screen and (max-width: 375px){
@@ -252,11 +236,6 @@ li {
         section.split.titulopage {
             background-size: 100vh;
         }
-        .titulo {
-            top: 0;
-            bottom: 50%;
-            margin-bottom: 1vh;
-        }
         .infosform {
             padding-top: 0.1em;
         }
@@ -265,8 +244,7 @@ li {
     @media screen and (max-width: 280px){
         h1.titulo{
             font-size: 25px;
-            margin-left: 8%;
-            margin-right: 8%;
+            max-width: 240px;
         }
         .infosform {
             font-size: 14px;
