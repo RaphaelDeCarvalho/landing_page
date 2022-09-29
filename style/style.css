@@ -13,6 +13,12 @@ html {
 .labnome{
     padding-right: 135px;
 }
+.split {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 section.split.titulopage{
     background-image: url('../img/soap0.jpg');
     background-position: center center;
@@ -34,15 +40,14 @@ h1.titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     max-width: 360px;
     color: #04702a;
-    background: #a3ffe640;
+    background: #e6ebea73;
     font-size: 35px;
-    border: 3px solid;
+    border: 0.2rem solid;
+    padding: 0 1em;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40vh;
 }
 input {
     background-color: #fff;
@@ -59,59 +64,42 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     font-size: 20px;
 }
 .infosform{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     color: #04702a;
-    background-color: #a3ffe640;
+    background-color: #e6ebea73;
+    width: 20rem;
+    padding: 1rem;
 }
 @media screen and (min-width: 1170px) {
-h1.titulo{
-    border: 3px solid;
-    margin-left: 14vw;
-    margin-right: 14vw;
-    padding: 0 1em;
-    position: fixed;
-}
-.titulo, .infosform {
-    text-align: center;
-    margin-top: 43vh;
-}
-.infosform {
-    margin-top: 35vh;
-    height: 18em;
-    margin-left: 15vw;
-    margin-right: 15vw;
-}
-.split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-}
+    .titulo, .infosform {
+        text-align: center;
+    }
+    .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+    }
 
-.titulo {
-    left: 0;
+    .infospage {
+        right: 0;
+
     
-}
+    }
+    label {
+        padding-right: 100px;
+    }
+    li {
+        list-style: none;
+    }
+    .setaDown, .setaUp{
+        display: none;
+    }
 
-.infospage {
-    right: 0;
-
-   
-}
-label {
-    padding-right: 100px;
-}
-li {
-    list-style: none;
-}
-.setaDown, .setaUp{
-    display: none;
-}
-.tituloform{
-    margin-top: 25vh;
-    padding-top: 3vh;
-}
 }
 
 @media screen and (max-width: 1169px){
@@ -146,7 +134,6 @@ li {
         
     }
     .infosform {
-        margin-top: 25vh;
         padding: 1em;
         max-width: 451px;
         margin-left: auto;
@@ -178,13 +165,6 @@ li {
     }
     ul {
         padding: 0;
-    }
-    .titulo {
-        position: absolute;
-        margin-top: 40vh;
-        top: 0;
-        right: 0;
-        left: 0;
     }
     .setaDown, .setaUp {
         margin-top: 90vh;
