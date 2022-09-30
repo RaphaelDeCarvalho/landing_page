@@ -40,10 +40,9 @@ h1.titulo{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 360px;
     color: #04702a;
     background: #e6ebea73;
-    font-size: 35px;
+    font-size: 3rem;
     border: 0.2rem solid;
     padding: 0 1em;
     margin-left: auto;
@@ -71,6 +70,18 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     background-color: #e6ebea73;
     width: 20rem;
     padding: 1rem;
+}
+.botao {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+}
+button.botaoUp {
+    display: none;
+    top: 0;
+}
+button.botaoDown {
+    bottom: 0;
 }
 @media screen and (min-width: 1170px) {
     .titulo, .infosform {
@@ -115,19 +126,10 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     ul {
         padding: 0;
     }
-    .setaDown, .setaUp {
-        left: 0;
-        margin-top: 90vh;
-        padding-left: 50%;
-        position: absolute;
-    }
-    button.botaoUp {
-        display: none;
-    }
     .infospage {
         position: absolute;
         top: 100%;
-        height: 90vh;
+        height: 100vh;
         right: 0;
         left: 0;
         bottom: 0;
@@ -165,9 +167,6 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     }
     ul {
         padding: 0;
-    }
-    .setaDown, .setaUp {
-        margin-top: 90vh;
     }
     .infospage {
         position: absolute;
