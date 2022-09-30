@@ -2,7 +2,7 @@ var buttonUp = document.querySelector('button.botaoUp');
 var buttonDown = document.querySelector('button.botaoDown');
 
 function scrollButton(){
-    document.documentElement.scrollTop = 1601
+    document.documentElement.scrollTop = 1680
 };
 function scrollBackButton(){
     document.documentElement.scrollTop = 0
