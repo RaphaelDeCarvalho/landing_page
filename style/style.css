@@ -31,7 +31,7 @@ section.split.titulopage{
     bottom: 0;
 }
 section.split.institucionalpage{
-    background-image: url('../img/consumer0.jpg');
+    background-image: url('../img/consumer1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,17 +42,33 @@ section.split.infospage {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.infostext {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    color: #04702a;
+    background-color: #ffffff99;
+    width: 30rem;
+    padding: 1rem;
+}
 h1.titulo{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #04702a;
-    background: #e6ebea73;
+    background: #ffffff99;
     font-size: 3rem;
     border: 0.2rem solid;
     padding: 0 1em;
     margin-left: auto;
     margin-right: auto;
+}
+h2.infostitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p.infosp {
+    font-size: 1.3rem;
 }
 h2.tituloform {
     margin-bottom: 0;
@@ -76,7 +92,7 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     flex-direction: column;
     align-content: space-around;
     color: #04702a;
-    background-color: #e6ebea73;
+    background-color: #ffffff99;
     width: 20rem;
     padding: 1rem;
 }
@@ -135,14 +151,21 @@ button.botaoDown {
     ul {
         padding: 0;
     }
-    .institucionalpage,.infospage {
+    .institucionalpage {
         position: absolute;
         top: 100%;
         height: 100vh;
         right: 0;
         left: 0;
         bottom: 0;
-        
+    }
+    .infospage {
+        position: absolute;
+        top: 200%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
     .infosform {
         padding: 1em;
