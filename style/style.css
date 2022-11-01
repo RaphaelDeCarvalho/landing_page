@@ -18,13 +18,14 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 section.split.titulopage{
     background-image: url('../img/soap0.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    
     top: 0;
     left: 0;
     right: 0;
@@ -35,12 +36,14 @@ section.split.institucionalpage{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 section.split.infospage {
     background-image: url('../img/consumer02.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 .infostext {
     display: flex;
@@ -48,6 +51,7 @@ section.split.infospage {
     align-content: space-around;
     color: #04702a;
     background-color: #ffffff99;
+    text-align: center;
     width: 30rem;
     padding: 1rem;
 }
@@ -121,9 +125,18 @@ button.botaoDown {
         overflow-x: hidden;
     }
 
-    .institucionalpage,.infospage {
-        right: 0;
+    .titulopage {
+        left: 0;
+        position: absolute;
+    }
+    .institucionalpage {
+        left: 50%;
+        position: absolute;
+    }
 
+    .infospage {
+        left: 100%;
+        position: absolute;
     
     }
     label {
@@ -193,6 +206,15 @@ button.botaoDown {
     section.split.titulopage {
         background-size: 100vh;
         background-position: top;
+    }
+    .infostext{
+        width: 100%;
+    }
+    p.infosp {
+        font-size: 1rem;
+    }
+    h2.infostitulo,p.infosp{
+        padding: 0 2rem;
     }
     li {
         list-style: none;
