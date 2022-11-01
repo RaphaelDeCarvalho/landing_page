@@ -48,9 +48,12 @@ h1.titulo{
     margin-left: auto;
     margin-right: auto;
 }
+h2.tituloform {
+    margin-bottom: 0;
+}
 input {
     background-color: #fff;
-    border: 1px solid #04702a;
+    border: 0.150rem solid #04702a;
 }
 li {
     margin-bottom: 5px;
