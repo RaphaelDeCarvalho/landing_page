@@ -21,35 +21,52 @@
 <body> 
     <header>
     <!-- Imagem -->
-    <section class="split titulopage">
-    <h1 id="titulomain" class="titulo">Sabão Natural</h1>
-    <button class="botao botaoDown" onclick="scrollButton()"><div class="setaDown" id="setaDown"><i class="fas fa-chevron-down"></i>
-    </div></button>
-    </section>
+        <section class="split titulopage" id="toppage">
+            <h1 id="titulomain" class="titulo">Sabão Natural</h1>
+            <button class="botao botaoDown">
+                <div class="setaDown" id="setaMiddle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </button>
+        </section>
     </header>
     <!-- Apresentação -->
-    <section class="split institucionalpage">
+    <section class="split institucionalpage" id="middlepage">
+        <button class="botao botaoUp" >
+            <div class="setaUp" id="setaUp">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </button>
         <div class="infostext">
             <h2 class="infostitulo">De mãos dadas com a natureza</h2>
             <p class="infosp">Com ingredientes totalmente naturais e a fabricação artesanal este sabão tem as fragrâncias de frutas adocicadas, cítricas, herbais, amadeirados e marinhos com o diferencial de ser 100% sustentável a um preço acessível, podendo ser absorvido pela natureza e sem agredir o meio ambiente.</p>
         </div>
+        <button class="botao botaoDown">
+            <div class="setaDown" id="setaDown">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </button>
     </section>
     <!-- Formulário -->
-    <section class="split infospage">
-        <button class="botao botaoUp" onclick="scrollBackButton()"><div class="setaUp" id="setaUp"><i class="fas fa-chevron-up"></i></div></button>
+    <section class="split infospage" id="bottompage">
+            <button class="botao botaoUp">
+                <div class="setaUp" id="setaUp">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </button>
         <div class="infosform">
-        <h2 id="tituloform" class="tituloform">Inscreva-se para informações e <br> novidades do produto</h2>
-        <form action="https://formsubmit.co/1dc32f7af79164451f45cb66f8cd5d9e" method="POST" class="formulamain" id="formula">
-        <ul class="formitems">
-            <li>
-            <input type="text" class="formitem" placeholder="Nome:" name="name" id="nome" required>
-            </li>
-            <li>
-            <input type="email" class="formitem" placeholder="E-mail:" name="email" id="carta" required>
-            </li>
-        </ul>
-        <button type="submit">Inscrever</button>
-        </form>
+            <h2 id="tituloform" class="tituloform">Inscreva-se para informações e <br> novidades do produto</h2>
+            <form action="https://formsubmit.co/1dc32f7af79164451f45cb66f8cd5d9e" method="POST" class="formulamain" id="formula">
+                <ul class="formitems">
+                    <li>
+                    <input type="text" class="formitem" placeholder="Nome:" name="name" id="nome" required>
+                    </li>
+                    <li>
+                    <input type="email" class="formitem" placeholder="E-mail:" name="email" id="carta" required>
+                    </li>
+                </ul>
+                <button type="submit">Inscrever</button>
+            </form>
     </div>
     </section>
     <script type="text/javascript" src="script/script.js"></script>
