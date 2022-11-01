@@ -106,7 +106,6 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     position: absolute;
 }
 button.botaoUp {
-    display: none;
     top: 0;
 }
 button.botaoDown {
