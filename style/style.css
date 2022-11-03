@@ -196,7 +196,7 @@ button.botaoMiddle, button.botaoDown {
 }
 @media screen and (max-width: 500px) {
     h1.titulo{
-        font-size: 28px;
+        font-size: 2.1rem;
         max-width: 270px;
     }
     .split {
@@ -208,6 +208,7 @@ button.botaoMiddle, button.botaoDown {
     }
     .infostext{
         width: 100%;
+        padding: 0;
     }
     p.infosp {
         font-size: 1rem;
@@ -231,6 +232,9 @@ button.botaoMiddle, button.botaoDown {
     }
     
     @media screen and (max-width: 375px){
+        h1.titulo{
+            font-size: 1.8rem;
+        }
         li {
             list-style: none;
         }
