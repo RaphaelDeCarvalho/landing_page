@@ -105,10 +105,10 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
     background-color: transparent;
     position: absolute;
 }
-button.botaoUp {
+button.botaoTop, button.botaoUp {
     top: 0;
 }
-button.botaoDown {
+button.botaoMiddle, button.botaoDown {
     bottom: 0;
 }
 @media screen and (min-width: 1170px) {
