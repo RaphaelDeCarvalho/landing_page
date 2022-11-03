@@ -87,9 +87,11 @@ li {
 ul.formitems{
     padding: 0;
 }
-i.fas.fa-chevron-down, i.fas.fa-chevron-up {
+i.fas.fa-chevron-down, i.fas.fa-chevron-up, 
+i.fas.fa-chevron-right, i.fas.fa-chevron-left {
     color: #04702a;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .infosform{
     display: flex;
@@ -107,6 +109,12 @@ i.fas.fa-chevron-down, i.fas.fa-chevron-up {
 }
 button.botaoTop, button.botaoUp {
     top: 0;
+}
+button.botaoRight{
+    right: 0;
+}
+button.botaoLeft{
+    left: 0;
 }
 button.botaoMiddle, button.botaoDown {
     bottom: 0;
@@ -153,6 +161,9 @@ button.botaoMiddle, button.botaoDown {
 @media screen and (max-width: 1169px){
     .split {
         text-align: center;
+    }
+    button.botaoLeft, button.botaoRight{
+        display: none;
     }
     section.split.titulopage {
         background-size: cover;
