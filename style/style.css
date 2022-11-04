@@ -2,6 +2,9 @@ html {
     font-family: 'Cinzel', serif;
     scroll-behavior: smooth;
 }
+body {
+    overflow: hidden;
+  }
 .tituloimg{
     position: absolute;
     height: 50vh;
@@ -132,6 +135,9 @@ button.botaoMiddle, button.botaoDown {
         overflow-x: hidden;
     }
 
+    button.botaoLeft {
+        display: none;
+    }
     .titulopage {
         left: 0;
         position: absolute;
