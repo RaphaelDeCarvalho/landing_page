@@ -55,7 +55,7 @@ function showScroll() {
       buttonLeft.style.display = "none"; buttonRight.style.display = "block";
     } 
   
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 300) {
     buttonMiddle.style.display = "none"; buttonUp.style.display = "block";
   } else {
     buttonMiddle.style.display = "block"; buttonUp.style.display = "none";
