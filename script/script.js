@@ -47,21 +47,21 @@ buttonRight.addEventListener('click', function(){
 window.onscroll = function() {showScroll()};
 function showScroll() {
   
-    if (document.body.scrollLeft > 0 || document.documentElement.scrollLeft > 48) {
+    if (document.documentElement.scrollLeft > 48) {
       buttonLeft.style.display = "block"; buttonRight.style.display = "none";
-    } else if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+    } else if(document.documentElement.scrollTop > 0){
       buttonRight.style.display = "none";
     } else {
       buttonLeft.style.display = "none"; buttonRight.style.display = "block";
     } 
   
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 100) {
     buttonMiddle.style.display = "none"; buttonUp.style.display = "block";
   } else {
     buttonMiddle.style.display = "block"; buttonUp.style.display = "none";
   } 
   
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1610) {
+  if (document.documentElement.scrollTop > 1300) {
     buttonTop.style.display = "block"; buttonDown.style.display = "none";
   } else {
     buttonTop.style.display = "none"; buttonDown.style.display = "block";
