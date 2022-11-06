@@ -61,7 +61,7 @@ function showScroll() {
     buttonMiddle.style.display = "block"; buttonUp.style.display = "none";
   } 
   
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1600) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1610) {
     buttonTop.style.display = "block"; buttonDown.style.display = "none";
   } else {
     buttonTop.style.display = "none"; buttonDown.style.display = "block";
