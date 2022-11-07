@@ -21,7 +21,7 @@ html {
     position: absolute;
 }
 section.split.titulopage{
-    background-image: url('../img/soap0.jpg');
+    background-image: url('../img/soap1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@ section.split.institucionalpage{
     
 }
 section.split.infospage {
-    background-image: url('../img/consumer02.jpg');
+    background-image: url('../img/consumer2.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -168,9 +168,6 @@ button.botaoMiddle, button.botaoDown {
     button.botaoLeft, button.botaoRight{
         display: none;
     }
-    section.split.titulopage {
-        background-size: cover;
-    }
     li {
         list-style: none;
     }
@@ -217,7 +214,6 @@ button.botaoMiddle, button.botaoDown {
         text-align: center;
     }
     section.split.titulopage {
-        background-size: 100vh;
         background-position: top;
     }
     .infostext{
@@ -254,9 +250,6 @@ button.botaoMiddle, button.botaoDown {
         }
     }
     @media screen and (max-width: 320px){
-        section.split.titulopage {
-            background-size: 100vh;
-        }
         .infosform {
             font-size: 12px;
             max-width: 250px;
