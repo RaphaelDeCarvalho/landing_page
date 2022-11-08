@@ -10,6 +10,48 @@ let buttonTop = document.querySelector('button.botaoTop');
 let buttonLeft = document.querySelector('button.botaoLeft');
 let buttonRight = document.querySelector('button.botaoRight');
 
+// Script para exibição de telas dinâmicas
+let telaTitulo1 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap4.jpg')";
+let telaTitulo2 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap1.jpg')";
+ArrayTitulo = [];
+ArrayTitulo.push(telaTitulo1);
+ArrayTitulo.push(telaTitulo2);
+var counterTitulo = 0;
+setInterval(function(){
+    document.querySelector('section.split.titulopage').style.backgroundImage = ArrayTitulo[counterTitulo];
+    if(counterTitulo < ArrayTitulo.length) {counterTitulo++;
+    }else { counterTitulo = 0;}
+}, 10000);
+console.log(ArrayTitulo);
+
+let telaConsumer1 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer3.jpg')";
+let telaConsumer2 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer1.jpg')";
+ArrayConsumer = [];
+ArrayConsumer.push(telaConsumer1);
+ArrayConsumer.push(telaConsumer2);
+var counterConsumer = 0;
+setInterval(function(){
+    document.querySelector('section.split.institucionalpage').style.backgroundImage = ArrayConsumer[counterConsumer];
+    if(counterConsumer < ArrayConsumer.length) {counterConsumer++;
+    }else { counterConsumer = 0;}
+}, 16000);
+console.log(ArrayConsumer);
+
+let telaForm1 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer5.jpg')";
+let telaForm2 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer2.jpg')";
+ArrayForm = [];
+ArrayForm.push(telaForm1);
+ArrayForm.push(telaForm2);
+var counterForm = 0;
+setInterval(function(){
+    document.querySelector('section.split.infospage').style.backgroundImage = ArrayForm[counterForm];
+    if(counterForm < ArrayForm.length) {counterForm++;
+    }else { counterForm = 0;}
+}, 12000);
+console.log(ArrayForm);
+
+
+//Script para inserir nome de usuário no e-mail resposta
 const inputNome = document.querySelector('input#nome');
 
 inputNome.addEventListener('input', escreveNome);
@@ -20,6 +62,8 @@ function escreveNome(){
   console.log(inputNome.value);
 }
 
+
+//Script de navegação de telas pelas setas
 buttonMiddle.addEventListener('click', function(){
   screenMiddle.scrollIntoView()
   console.log(`body.scrollTop = ${document.body.scrollTop} & 
@@ -54,6 +98,7 @@ buttonRight.addEventListener('click', function(){
 });
 
 
+//Script para exibir e ocultar setas de cada tela
 window.onscroll = function() {showScroll()};
 function showScroll() {
   
