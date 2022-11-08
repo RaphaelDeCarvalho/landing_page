@@ -14,9 +14,9 @@ const inputNome = document.querySelector('input#nome');
 
 inputNome.addEventListener('input', escreveNome);
 
-function escreveNome(e){
+function escreveNome(){
   let inputResposta = document.querySelector('input#resposta');
-  inputResposta.setAttribute("value", `Olá, ${inputNome.value}! Obrigado por se Inscrever para conhecer mais sobre o Sabão Natural, em breve você irá receber e-mails com as novidades do produto e outras informações para estar antenado com o nosso mais novo lançamento.(Ou não pois isso nada mais é que uma landing page fictícia)`)
+  inputResposta.setAttribute("value", `Olá, ${inputNome.value}! \nObrigado por se Inscrever para conhecer mais sobre o Sabão Natural, em breve você irá receber e-mails com as novidades do produto e outras informações para estar antenado com o nosso mais novo lançamento.(Ou não pois isso nada mais é que uma landing page fictícia)`)
   console.log(inputNome.value);
 }
 
