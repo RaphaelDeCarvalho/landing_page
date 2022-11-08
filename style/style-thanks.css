@@ -1,0 +1,38 @@
+html {
+    font-family: 'Cinzel', serif;
+}
+.split {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+header.split.institucionalpage{
+    background-image: url('../img/consumer3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    
+}
+.infostext {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    color: #04702a;
+    background-color: #ffffff99;
+    text-align: center;
+    max-width: 650px;
+    padding: 1rem 0.5rem;
+}
+h2.infostitulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p.infosp {
+    font-size: 1.3rem;
+}
