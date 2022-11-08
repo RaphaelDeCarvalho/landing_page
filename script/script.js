@@ -11,12 +11,16 @@ let buttonLeft = document.querySelector('button.botaoLeft');
 let buttonRight = document.querySelector('button.botaoRight');
 
 // Script para exibição de telas dinâmicas
-let telaTitulo1 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap4.jpg')";
-let telaTitulo2 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap1.jpg')";
+const telaTitulo1 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap1.jpg')";
+const telaTitulo2 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap4.jpg')";
+const telaTitulo3 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap3.jpg')";
+const telaTitulo4 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap2.jpg')";
 ArrayTitulo = [];
 ArrayTitulo.push(telaTitulo1);
 ArrayTitulo.push(telaTitulo2);
-var counterTitulo = 0;
+ArrayTitulo.push(telaTitulo3);
+ArrayTitulo.push(telaTitulo4);
+let counterTitulo = 0;
 setInterval(function(){
     document.querySelector('section.split.titulopage').style.backgroundImage = ArrayTitulo[counterTitulo];
     if(counterTitulo < ArrayTitulo.length) {counterTitulo++;
@@ -24,12 +28,12 @@ setInterval(function(){
 }, 10000);
 console.log(ArrayTitulo);
 
-let telaConsumer1 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer3.jpg')";
-let telaConsumer2 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer1.jpg')";
+const telaConsumer1 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer3.jpg')";
+const telaConsumer2 = document.querySelector('section.split.institucionalpage').style.backgroundImage = "url('img/consumer1.jpg')";
 ArrayConsumer = [];
 ArrayConsumer.push(telaConsumer1);
 ArrayConsumer.push(telaConsumer2);
-var counterConsumer = 0;
+let counterConsumer = 0;
 setInterval(function(){
     document.querySelector('section.split.institucionalpage').style.backgroundImage = ArrayConsumer[counterConsumer];
     if(counterConsumer < ArrayConsumer.length) {counterConsumer++;
@@ -37,12 +41,12 @@ setInterval(function(){
 }, 16000);
 console.log(ArrayConsumer);
 
-let telaForm1 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer5.jpg')";
-let telaForm2 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer2.jpg')";
+const telaForm1 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer5.jpg')";
+const telaForm2 = document.querySelector('section.split.infospage').style.backgroundImage = "url('img/consumer2.jpg')";
 ArrayForm = [];
 ArrayForm.push(telaForm1);
 ArrayForm.push(telaForm2);
-var counterForm = 0;
+let counterForm = 0;
 setInterval(function(){
     document.querySelector('section.split.infospage').style.backgroundImage = ArrayForm[counterForm];
     if(counterForm < ArrayForm.length) {counterForm++;
