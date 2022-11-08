@@ -10,6 +10,16 @@ let buttonTop = document.querySelector('button.botaoTop');
 let buttonLeft = document.querySelector('button.botaoLeft');
 let buttonRight = document.querySelector('button.botaoRight');
 
+const inputNome = document.querySelector('input#nome');
+
+inputNome.addEventListener('input', escreveNome);
+
+function escreveNome(e){
+  let inputResposta = document.querySelector('input#resposta');
+  inputResposta.setAttribute("value", `Olá, ${inputNome.value}! Obrigado por se Inscrever para conhecer mais sobre o Sabão Natural, em breve você irá receber e-mails com as novidades do produto e outras informações para estar antenado com o nosso mais novo lançamento.(Ou não pois isso nada mais é que uma landing page fictícia)`)
+  console.log(inputNome.value);
+}
+
 buttonMiddle.addEventListener('click', function(){
   screenMiddle.scrollIntoView()
   console.log(`body.scrollTop = ${document.body.scrollTop} & 
