@@ -1,6 +1,10 @@
 // Script para exibição de telas dinâmicas
 export
 function dinamicScreen(){
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+      
     console.log('função dinamicScreen chamada com sucesso!')
     const telaTitulo1 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap1.jpg')";
     const telaTitulo2 = document.querySelector('section.split.titulopage').style.backgroundImage = "url('img/soap4.jpg')";
@@ -11,10 +15,13 @@ function dinamicScreen(){
     ArrayTitulo.push(telaTitulo2);
     ArrayTitulo.push(telaTitulo3);
     ArrayTitulo.push(telaTitulo4);
-    let counterTitulo = 0;
+    let randomNumber = getRandomInt(ArrayTitulo.length);
+    let counterTitulo = randomNumber;
+    document.querySelector('section.split.titulopage').style.backgroundImage = ArrayTitulo[counterTitulo];
     setInterval(function(){
-        document.querySelector('section.split.titulopage').style.backgroundImage = ArrayTitulo[counterTitulo];
+        console.log('contei');
         if(counterTitulo < ArrayTitulo.length) {counterTitulo++;
+            document.querySelector('section.split.titulopage').style.backgroundImage = ArrayTitulo[counterTitulo];
         }else { counterTitulo = 0;}
     }, 10000);
     console.log(ArrayTitulo);
@@ -24,7 +31,9 @@ function dinamicScreen(){
     const ArrayConsumer = [];
     ArrayConsumer.push(telaConsumer1);
     ArrayConsumer.push(telaConsumer2);
-    let counterConsumer = 0;
+    randomNumber = getRandomInt(ArrayConsumer.length);
+    let counterConsumer = randomNumber;
+    document.querySelector('section.split.institucionalpage').style.backgroundImage = ArrayConsumer[counterConsumer];
     setInterval(function(){
         document.querySelector('section.split.institucionalpage').style.backgroundImage = ArrayConsumer[counterConsumer];
         if(counterConsumer < ArrayConsumer.length) {counterConsumer++;
@@ -37,7 +46,9 @@ function dinamicScreen(){
     const ArrayForm = [];
     ArrayForm.push(telaForm1);
     ArrayForm.push(telaForm2);
-    let counterForm = 0;
+    randomNumber = getRandomInt(ArrayForm.length);
+    let counterForm = randomNumber;
+    document.querySelector('section.split.infospage').style.backgroundImage = ArrayForm[counterForm];
     setInterval(function(){
         document.querySelector('section.split.infospage').style.backgroundImage = ArrayForm[counterForm];
         if(counterForm < ArrayForm.length) {counterForm++;
